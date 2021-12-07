@@ -25,7 +25,7 @@ func main() {
 	}
 
 	score := 0
-	num_questions := 2
+	num_questions := 3
 
 	fmt.Printf("What is better, the RTX 3080 of RTX 3090? ")
 	var answare string
@@ -44,6 +44,17 @@ func main() {
 	fmt.Scan(&cores)
 
 	if cores == 12 {
+		fmt.Println("Correct!")
+		score++
+	} else {
+		fmt.Println("Incorrect!")
+	}
+
+	fmt.Printf("How many cores does the Ryzen 5 1500x have? ")
+	var core uint
+	fmt.Scan(&core)
+
+	if core == 6 {
 		fmt.Println("Correct!")
 		score++
 	} else {
